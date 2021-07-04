@@ -6,6 +6,11 @@
   --clr-lightred: hsl(354, 100%, 66%);
   --clr-gray: hsl(0, 0%, 59%);
   --clr-darkblue: hsl(209, 33%, 12%);
+  --clr-grayblue: hsl(223, 59%, 83%);
+
+  --margin-x: 36px;
+  --margin-y: 81px;
+  --margin-y2: 72px;
 }
 
 *,
@@ -19,4 +24,132 @@
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
+  font-weight: 300;
+  min-width: 375px;
+}
+
+header {
+  margin: var(--margin-y) var(--margin-x) var(--margin-y2) var(--margin-x);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__logo img {
+  width: 56px;
+  margin-bottom: 36px;
+}
+
+.header__title {
+  font-size: 22px;
+  color: var(--clr-gray);
+  margin-bottom: 16px;
+}
+
+.header__title--accent {
+  color: hsl(209, 33%, 12%);
+  font-weight: 800;
+}
+
+.header__subtitle {
+  color: hsl(209, 33%, 12%);
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+}
+
+.form__input,
+.form__button {
+  height: 40px;
+  border-radius: 28px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form__input {
+  border: 1px solid var(--clr-paleblue);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.1);
+  padding: 0px 32px;
+}
+
+.form__input:focus {
+  color: black;
+}
+
+.form__input::placeholder {
+  color: var(--clr-grayblue);
+}
+
+.form__button {
+  background-color: var(--clr-blue);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  box-shadow: 0px 5px 10px 2px hsla(233, 87, 63, 0.23);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.form__button:hover {
+  background-color: hsl(223, 87%, 70%);
+  cursor: pointer;
+}
+
+.main__image {
+  margin-left: var(--margin-x);
+  margin-right: var(--margin-x);
+  margin-bottom: 120px;
+}
+
+.main__image img {
+  width: 100%;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  max-width: 120px;
+  margin: auto;
+  margin-bottom: 27px;
+}
+
+.footer__icon {
+  border-radius: 50%;
+  border: 1px solid rgba(76, 123, 243, 0.15);
+  width: 32px;
+  height: 32px;
+  color: var(--clr-blue);
+  display: block;
+  text-align: center;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.footer__icon:hover {
+  cursor: pointer;
+  background-color: var(--clr-blue);
+  color: hsl(0, 0%, 100%);
+}
+
+.footer__copyright {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--clr-gray);
+  text-align: center;
 }
