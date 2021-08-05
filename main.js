@@ -5,7 +5,6 @@ const inputField = document.getElementById("input_email");
 
 const errorEmpty = "Whoops! It looks like you forgot to add your email";
 const errorInvalid = "Please provide a valid email address";
-const emailValidationMessage = document.getElementById("validationmessage");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -17,7 +16,7 @@ function ValidateEmail() {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   // ToDO: Research RFC 2822
 
-  var inputtedEmail = form["input_email"].value;
+  var inputtedEmail = inputField.value;
 
   if (inputtedEmail.match(validEmailFormat)) {
     inputField.classList.remove("invalid");
