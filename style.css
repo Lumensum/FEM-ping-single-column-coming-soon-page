@@ -146,6 +146,10 @@ form input[type="submit"]:hover {
 
 /* ========== FOOTER ========== */
 
+footer {
+  margin-bottom: 16px;
+}
+
 footer ul {
   list-style: none;
   display: flex;
