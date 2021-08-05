@@ -22,6 +22,7 @@ function ValidateEmail() {
     inputField.classList.remove("invalid");
     validationmessageContainer.classList.add("hideMe");
     validationmessageContainer.innerText = "";
+    alert("Thank you for signing up!");
     return true;
   }
 
