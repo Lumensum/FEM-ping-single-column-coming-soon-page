@@ -40,13 +40,11 @@ Users should be able to:
 
 ### Screenshot
 
-I made screenshot for different screen-sizes.
-
------ INSERT SCREENSHOTS HERE -----
+![Screenshot](./responsivescreensot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub/ping-single-column-coming-soon-page-jaYlDiATx](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub/ping-single-column-coming-soon-page-jaYlDiATx)
 - Live Site URL: [https://lumensum.github.io/FEM-ping-single-column-coming-soon-page/](https://lumensum.github.io/FEM-ping-single-column-coming-soon-page/)
 
 ## 🎓 My process
