@@ -1,5 +1,8 @@
 const form = document.getElementById("form");
 
+const errorEmpty = "Whoops! It looks like you forgot to add your email";
+const errorInvalid = "Please provide a valid email address";
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("form submitted");
@@ -14,6 +17,12 @@ function ValidateEmail() {
   // ToDO: Research RFC 2822
 
   const inputtedEmail = form["input_email"].value;
+
+  if (inputtedEmail == null) {
+    console.log(errorEmpty);
+    return;
+  }
+
   const emailValidationMessage = document.getElementById("validationmessage");
 
   if (inputtedEmail.match(validEmailFormat)) {
