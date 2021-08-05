@@ -1,4 +1,6 @@
 const form = document.getElementById("form");
+const validationmessageContainer = document.getElementById("validationmessage");
+const inputField = document.getElementById("input_email");
 
 const errorEmpty = "Whoops! It looks like you forgot to add your email";
 const errorInvalid = "Please provide a valid email address";
@@ -16,9 +18,12 @@ function ValidateEmail() {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   // ToDO: Research RFC 2822
 
-  const inputtedEmail = form["input_email"].value;
+  var inputtedEmail = form["input_email"].value;
 
-  if (inputtedEmail == null) {
+  if (inputtedEmail == "") {
+    validationmessageContainer.innerText = errorEmpty;
+    inputField.classList.add("invalid");
+    validationmessageContainer.classList.remove("hideMe");
     console.log(errorEmpty);
     return;
   }
@@ -26,8 +31,17 @@ function ValidateEmail() {
   const emailValidationMessage = document.getElementById("validationmessage");
 
   if (inputtedEmail.match(validEmailFormat)) {
+    inputField.classList.remove("invalid");
+    validationmessageContainer.classList.add("hideMe");
+    validationmessageContainer.innerText = "";
+
     return true;
   } else {
+    console.log(errorInvalid);
+    inputField.classList.add("invalid");
+    validationmessageContainer.innerText = errorInvalid;
+    validationmessageContainer.classList.remove("hideMe");
+
     return false;
   }
 }

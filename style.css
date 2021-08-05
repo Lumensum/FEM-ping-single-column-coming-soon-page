@@ -129,6 +129,10 @@ form input[type="submit"]:hover {
   background-color: hsl(223, 87%, 70%);
 }
 
+.invalid {
+  border-color: red;
+}
+
 .validationmessage {
   position: relative;
   margin: 5px auto 10px auto;
@@ -208,6 +212,7 @@ footer p {
   }
 
   .validationmessage {
+    position: absolute;
     padding-left: 32px;
   }
 
