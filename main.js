@@ -22,7 +22,9 @@ function ValidateEmail() {
     inputField.classList.remove("invalid");
     validationmessageContainer.classList.add("hideMe");
     validationmessageContainer.innerText = "";
-    alert("Thank you for signing up!");
+    form["input_email"].value = "";
+    alert("Thank you for signing up!"); //  Maybe replace the input field and button with a friendly message
+    // Insert email into database
     return true;
   }
 
