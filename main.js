@@ -1,4 +1,5 @@
 const form = document.getElementById("form");
+const thankyoumessage = document.getElementById("thankyoumessage");
 const validationmessageContainer = document.getElementById("validationmessage");
 const inputField = document.getElementById("input_email");
 
@@ -22,8 +23,8 @@ function ValidateEmail() {
     inputField.classList.remove("invalid");
     validationmessageContainer.classList.add("hideMe");
     validationmessageContainer.innerText = "";
-    form["input_email"].value = "";
-    alert("Thank you for signing up!"); //  Maybe replace the input field and button with a friendly message
+    form.style.display = "none";
+    thankyoumessage.style.display = "block";
     // Insert email into database
     return true;
   }

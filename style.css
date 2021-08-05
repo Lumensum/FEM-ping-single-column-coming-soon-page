@@ -73,7 +73,8 @@ main {
 
 /* ---------- MAIN: FORM ----------*/
 
-form {
+form,
+.thankyoumessage {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -139,6 +140,24 @@ form input[type="submit"]:hover {
   color: hsl(354, 100%, 66%);
   font-size: 10px;
   font-style: italic;
+}
+
+/* ---------- MAIN: THANK YOU MESSAGE ---------- */
+
+.thankyoumessage {
+  position: relative;
+  display: none;
+}
+
+.thankyoumessage h3 {
+  margin-bottom: 12px;
+}
+
+.thankyoumessage p {
+  margin: auto;
+  max-width: 70vw;
+  font-size: 14px;
+  margin-bottom: 14px;
 }
 
 /* ---------- MAIN: IMAGE ----------*/
@@ -214,6 +233,15 @@ footer p {
   .validationmessage {
     position: absolute;
     padding-left: 32px;
+  }
+
+  .thankyoumessage h3 {
+    margin-bottom: 8px;
+  }
+
+  .thankyoumessage p {
+    font-size: 20px;
+    margin-bottom: 0px;
   }
 
   form input[type="submit"] {
