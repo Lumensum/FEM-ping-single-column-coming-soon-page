@@ -42,17 +42,7 @@ Users should be able to:
 
 I made screenshot for different screen-sizes.
 
-#### Desktop
-
-![](./screenshot_desktop.png)
-
-#### Mobile
-
-![](./screenshot_mobile.png)
-
-#### Tablet
-
-![](./screenshot_tablet.png)
+----- INSERT SCREENSHOTS HERE -----
 
 ### Links
 
