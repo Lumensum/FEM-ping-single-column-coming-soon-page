@@ -153,6 +153,7 @@ footer ul {
   align-items: center;
   flex-direction: row;
   margin-bottom: 27px;
+  gap: 12px;
 }
 
 .footer__icon {
