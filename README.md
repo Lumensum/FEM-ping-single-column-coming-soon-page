@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./responsivescreensot.jpg)
+![Screenshot](./responsivescreenshot.jpg)
 
 ### Links
 
