@@ -80,7 +80,11 @@
             id="input_email"
             placeholder="Your email address..."
           />
-          <p id="validationmessage" class="validationmessage hideMe">
+          <p
+            id="validationmessage"
+            class="validationmessage hideMe"
+            aria-live="polite"
+          >
             Please provide a valid email address
           </p>
         </div>
@@ -103,7 +107,7 @@
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            aria-live="Share this page on Facebook"
+            aria-label="Share this page on Facebook"
             ><i class="fab fa-facebook-f"></i
           ></a>
         </li>
@@ -113,7 +117,7 @@
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            aria-live="Share this page on Twitter"
+            aria-label="Share this page on Twitter"
             ><i class="fab fa-twitter"></i
           ></a>
         </li>
@@ -123,7 +127,7 @@
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            aria-live="Share this page on Instagram"
+            aria-label="Share this page on Instagram"
             ><i class="fab fa-instagram"></i
           ></a>
         </li>
