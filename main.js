@@ -20,7 +20,7 @@ function ValidateEmail() {
 
   if (inputtedEmail.match(validEmailFormat)) {
     inputField.classList.remove("invalid");
-    validationmessageContainer.classList.add("hideMe");
+    validationmessageContainer.setAttribute("hidden", true);
     validationmessageContainer.innerText = "";
     form.style.display = "none";
     thankyoumessage.style.display = "block";
@@ -31,13 +31,14 @@ function ValidateEmail() {
   if (inputtedEmail == "") {
     validationmessageContainer.innerText = errorEmpty;
     inputField.classList.add("invalid");
-    validationmessageContainer.classList.remove("hideMe");
+    validationmessageContainer.removeAttribute("hidden");
+
     return false;
   }
 
   inputField.classList.add("invalid");
   validationmessageContainer.innerText = errorInvalid;
-  validationmessageContainer.classList.remove("hideMe");
+  validationmessageContainer.removeAttribute("hidden");
 
   return false;
 }

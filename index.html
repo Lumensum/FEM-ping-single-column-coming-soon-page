@@ -75,14 +75,17 @@
     <main>
       <form id="form">
         <div class="form__inputfield">
+          <label for="email" class="visuallyhidden">Email:</label>
           <input
             type="text"
             id="input_email"
+            name="email"
             placeholder="Your email address..."
           />
           <p
+            hidden
             id="validationmessage"
-            class="validationmessage hideMe"
+            class="validationmessage"
             aria-live="polite"
           >
             Please provide a valid email address
