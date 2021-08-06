@@ -96,7 +96,6 @@ body {
 
 .form__inputfield {
   font-size: 1rem;
-  display: block;
   width: 100%;
   border: 0.0625rem /* 1px */ solid var(--clr-paleblue);
 }
@@ -265,7 +264,7 @@ body {
   .form__button {
     margin-top: 0rem; /* 0px */
     margin-left: 1rem; /* 16px */
-    width: 12.5rem; /* 200px */
+    flex: 1 1 50%;
   }
 
   .footer {
