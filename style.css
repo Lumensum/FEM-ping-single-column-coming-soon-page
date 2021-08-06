@@ -39,7 +39,7 @@ body {
 }
 
 .header__logo {
-  max-width: 15vw;
+  max-width: 5.625rem; /* 90px */
   margin-bottom: 3rem; /* 48px */
 }
 
@@ -172,7 +172,6 @@ body {
 
 .main__thankyoumessage__description {
   margin: auto;
-  max-width: 70vw;
   font-size: 1rem; /* 16px */
   margin-bottom: 0.875rem; /* 14px */
 }
@@ -229,7 +228,7 @@ body {
 
 /* ========== MEDIA QUERIES ========== */
 
-@media screen and (min-width: 50rem /* 800px */) {
+@media screen and (min-width: 54rem /* 864px */) {
   .header__title {
     font-size: 3rem; /* 48px */
   }
