@@ -242,6 +242,10 @@ body {
     max-width: 45vw;
   }
 
+  .main__image {
+    margin-top: 1rem; /* 16 px */
+  }
+
   .form {
     flex-direction: row;
     text-align: left;
