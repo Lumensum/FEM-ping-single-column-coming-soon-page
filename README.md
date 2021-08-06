@@ -17,13 +17,10 @@ If you have any questions or if you can give me some advice to help me become a 
 - [Links](#links)
 - [My process](#-my-process)
 - [Built with](#built-with)
-- [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
 - [Author](#-author)
 - [Acknowledgments](#-acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## 📋 Overview
 
@@ -31,10 +28,10 @@ If you have any questions or if you can give me some advice to help me become a 
 
 Users should be able to:
 
-- :heavy_check_mark:View the optimal layout for the site depending on their device's screen size
-- :heavy_check_mark: See hover states for all interactive elements on the page
--:heavy_check_mark: Submit their email address using an `input` field
-:heavy_check_mark: Receive an error message when the `form` is submitted if:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Submit their email address using an `input` field
+- Receive an error message when the `form` is submitted if:
   - The `input` field is empty. The message for this error should say _"Whoops! It looks like you forgot to add your email"_
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Please provide a valid email address"_
 
@@ -53,7 +50,7 @@ Users should be able to:
 
 The goal for me with this project was learning about responsiveness and accessibility. In the previous projects I used a lot of fixed dimensions to make it look like toe design as much as possible. For this one I tried using none, but I still had to use it a couple of times. However, I tried to reduce that as much as possible.
 
-I also made the mobile-version first.
+I also made the mobile-version first. I read that this is common practice nowadays, so I wanted to try that as well.
 
 I tried to make the files as clean as possible. Instead of BEM naming and a lot of divs's, I used pure selectors when availlable.
 
@@ -62,46 +59,20 @@ I tried to make the files as clean as possible. Instead of BEM naming and a lot 
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- CSS
+- JavaScript
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to learn more about accessibility and how to implement it as good as possible in my markup and code. I will strart reading about it on [https://www.w3.org/standards/webdesign/accessibility](https://www.w3.org/standards/webdesign/accessibility)
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+For validation in forms, I need to learn about Regular expressions. HTML5 made it easier to check is an email-address is valid, but there are some much more reasons to check the input a user tries to submit. Especially when regarding to making sure the input does not contain malicious code, like something that can delete a database.
 
 ### Useful resources
 
 - [Meta Tags](https://metatags.io/) - I used this very easy-to-use meta tag generator to help me with the meta tags for sharing the URL.
 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Am I Responsive?](http://ami.responsivedesign.is/) - I used this webpage to make the screenshot, showing multiple devices.
 
 ## 📧 Author
 
