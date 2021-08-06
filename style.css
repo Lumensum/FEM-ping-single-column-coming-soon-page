@@ -31,7 +31,7 @@ body {
 /* ---------- HEADER ---------- */
 
 .header {
-  margin: 3rem /* 48px */ auto;
+  margin: 5rem auto 3rem; /* 80px 48px */
   display: flex;
   justify-content: center;
   align-items: center;
