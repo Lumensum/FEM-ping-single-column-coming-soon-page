@@ -149,7 +149,7 @@ form input[type="submit"]:hover {
   display: none;
 }
 
-.thankyoumessage h3 {
+.thankyoumessage h2 {
   margin-bottom: 12px;
 }
 
@@ -235,7 +235,7 @@ footer p {
     padding-left: 32px;
   }
 
-  .thankyoumessage h3 {
+  .thankyoumessage h2 {
     margin-bottom: 8px;
   }
 
