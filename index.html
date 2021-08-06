@@ -66,21 +66,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="Ping" />
-      <h1>We are launching <strong>soon!</strong></h1>
-      <p>Subscribe and get notified</p>
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="Ping" />
+      <h1 class="header__title">
+        We are launching <strong class="header__title--strong">soon!</strong>
+      </h1>
+      <p class="header__subtitle">Subscribe and get notified</p>
     </header>
 
-    <main>
-      <form id="form">
-        <div class="form__inputfield">
+    <main class="main">
+      <form id="form" class="form">
+        <div class="form__inputfieldcontainer">
           <label for="email" class="visuallyhidden">Email:</label>
           <input
+            class="form__inputfield"
             type="text"
             id="input_email"
             name="email"
             placeholder="Your email address..."
+            aria-describedby="validationmessage"
           />
           <p
             hidden
@@ -92,12 +96,16 @@
           </p>
         </div>
 
-        <button type="submit" value="Submit">Notify Me</button>
+        <button class="form__button" type="submit" value="Submit">
+          Notify Me
+        </button>
       </form>
 
-      <div id="thankyoumessage" class="thankyoumessage">
-        <h2>Thank you for signing up!</h2>
-        <p>We will notify you when our awesome service get's online!</p>
+      <div id="thankyoumessage" class="main__thankyoumessage">
+        <h2 class="main__thankyoumessage__header">Thank you for signing up!</h2>
+        <p class="main__thankyoumessage__description">
+          We will notify you when our awesome service get's online!
+        </p>
       </div>
 
       <img
@@ -107,8 +115,8 @@
       />
     </main>
 
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer__list">
         <li>
           <a
             class="footer__icon"
@@ -140,7 +148,9 @@
           ></a>
         </li>
       </ul>
-      <p>&copy; Copyright Ping. All rights reserved.</p>
+      <p class="footer__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
     </footer>
 
     <script src="./main.js" defer></script>

@@ -30,7 +30,7 @@ body {
 /* ========== HEADER ========== */
 /* ---------- HEADER ---------- */
 
-header {
+.header {
   margin: 5.0625rem /* 81px */ auto;
   display: flex;
   justify-content: center;
@@ -38,31 +38,31 @@ header {
   flex-direction: column;
 }
 
-header img {
+.header__logo {
   max-width: 15vw;
   margin-bottom: 2.25rem; /* 36px */
 }
 
-header h1 {
+.header__title {
   font-size: 1.375rem; /* 22px */
   font-weight: 300;
   color: var(--clr-gray);
   margin-bottom: 1rem; /* 16px */
 }
 
-header strong {
+.header__title--strong {
   color: var(--clr-darkblue);
   font-weight: 800;
 }
 
-header p {
+.header__subtitle {
   color: var(--clr-darkblue);
   font-size: 1rem; /* 16px */
 }
 
 /* ========== MAIN ========== */
 
-main {
+.main {
   max-width: 85vw;
   margin: 0 auto;
   display: flex;
@@ -73,8 +73,8 @@ main {
 
 /* ---------- MAIN: FORM ----------*/
 
-form,
-.thankyoumessage {
+.form,
+.main__thankyoumessage {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -82,19 +82,19 @@ form,
   text-align: center;
 }
 
-form input,
-button {
+.form__inputfield,
+.form__button {
   height: 2.5rem; /* 40px */
   border-radius: 1.75rem; /* 28px */
   box-shadow: 0rem 0.0625rem 0.1875rem 0.125rem /* 0px 1px 3px 2px */
     rgba(0, 0, 0, 0.1);
 }
 
-.form__inputfield {
+.form__inputfieldcontainer {
   width: 100%;
 }
 
-form input {
+.form__inputfield {
   font-size: 1rem;
   display: block;
   width: 100%;
@@ -102,19 +102,19 @@ form input {
   padding: 0rem 2rem; /* 0px 32px */
 }
 
-form input:focus {
+.form__inputfield:focus {
   color: black;
 }
 
-form input:hover {
+.form__inputfield:hover {
   border: 0.125rem /* 2px */ solid var(--clr-blue);
 }
 
-form input::placeholder {
+.form__inputfield::placeholder {
   color: var(--clr-grayblue);
 }
 
-form button {
+.form__button {
   margin-top: 0.625rem; /* 10px */
   padding: 0.625rem; /* 10px */
   background-color: var(--clr-blue);
@@ -129,7 +129,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.form__button:hover {
   background-color: hsl(223, 87%, 70%);
 }
 
@@ -158,16 +158,16 @@ form button:hover {
 
 /* ---------- MAIN: THANK YOU MESSAGE ---------- */
 
-.thankyoumessage {
+.main__thankyoumessage {
   position: relative;
   display: none;
 }
 
-.thankyoumessage h2 {
+.main__thankyoumessage__header {
   margin-bottom: 0.75rem; /* 12px */
 }
 
-.thankyoumessage p {
+.main__thankyoumessage__description {
   margin: auto;
   max-width: 70vw;
   font-size: 1rem; /* 16px */
@@ -184,11 +184,11 @@ form button:hover {
 
 /* ========== FOOTER ========== */
 
-footer {
+.footer {
   margin-bottom: 1rem; /* 16px */
 }
 
-footer ul {
+.footer__list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -217,7 +217,7 @@ footer ul {
   color: hsl(0, 0%, 100%);
 }
 
-footer p {
+.footer__copyright {
   font-size: 0.75rem; /* 12px */
   font-weight: 300;
   color: var(--clr-gray);
@@ -227,19 +227,19 @@ footer p {
 /* ========== MEDIA QUERIES ========== */
 
 @media screen and (min-width: 50rem /* 800px */) {
-  header h1 {
+  .header__title {
     font-size: 3rem; /* 48px */
   }
 
-  header p {
+  .header__subtitle {
     font-size: 1.25rem; /* 20px */
   }
 
-  main {
+  .main {
     max-width: 45vw;
   }
 
-  form {
+  .form {
     flex-direction: row;
     text-align: left;
   }
@@ -249,22 +249,22 @@ footer p {
     padding-left: 2rem; /* 32px */
   }
 
-  .thankyoumessage h2 {
+  .main__thankyoumessage__header {
     margin-bottom: 0.5rem; /* 8px */
   }
 
-  .thankyoumessage p {
+  .main__thankyoumessage__description {
     font-size: 1.25rem; /* 20px */
     margin-bottom: 0rem; /* 0px */
   }
 
-  form button {
+  .form__button {
     margin-top: 0rem; /* 0px */
     margin-left: 1rem; /* 16px */
     width: 12.5rem; /* 200px */
   }
 
-  footer {
+  .footer {
     font-size: 0.75rem; /* 12px */
   }
 }
