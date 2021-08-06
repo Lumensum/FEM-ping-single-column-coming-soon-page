@@ -156,6 +156,12 @@ body {
   width: 1px;
 }
 
+.form__inputfield:focus,
+.form__button:focus,
+.footer__icon:focus {
+  outline: 0.2rem solid #2ecc71;
+}
+
 /* ---------- MAIN: THANK YOU MESSAGE ---------- */
 
 .main__thankyoumessage {
